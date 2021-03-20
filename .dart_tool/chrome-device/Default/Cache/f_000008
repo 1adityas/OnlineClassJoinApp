@@ -1,0 +1,357 @@
+define(['dart_sdk', 'packages/flutter/src/foundation/_platform_web.dart', 'packages/flutter/src/services/system_channels.dart', 'packages/flutter/src/widgets/widget_span.dart'], (function load__packages__firebase_messaging__firebase_messaging_dart(dart_sdk, packages__flutter__src__foundation___platform_web$46dart, packages__flutter__src__services__system_channels$46dart, packages__flutter__src__widgets__widget_span$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const ui = dart_sdk.ui;
+  const _js_helper = dart_sdk._js_helper;
+  const collection = dart_sdk.collection;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const platform = packages__flutter__src__foundation___platform_web$46dart.src__foundation__platform;
+  const platform_channel = packages__flutter__src__services__system_channels$46dart.src__services__platform_channel;
+  const message_codec = packages__flutter__src__services__system_channels$46dart.src__services__message_codec;
+  const message_codecs = packages__flutter__src__services__system_channels$46dart.src__services__message_codecs;
+  const binding = packages__flutter__src__widgets__widget_span$46dart.src__widgets__binding;
+  var firebase_messaging = Object.create(dart.library);
+  var $_get = dartx._get;
+  var $toString = dartx.toString;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    IosNotificationSettingsL: () => (T.IosNotificationSettingsL = dart.constFn(dart.legacy(firebase_messaging.IosNotificationSettings)))(),
+    StreamControllerOfIosNotificationSettingsL: () => (T.StreamControllerOfIosNotificationSettingsL = dart.constFn(async.StreamController$(T.IosNotificationSettingsL())))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    StreamControllerOfStringL: () => (T.StreamControllerOfStringL = dart.constFn(async.StreamController$(T.StringL())))(),
+    boolL: () => (T.boolL = dart.constFn(dart.legacy(core.bool)))(),
+    MethodChannelL: () => (T.MethodChannelL = dart.constFn(dart.legacy(platform_channel.MethodChannel)))(),
+    __Tovoid: () => (T.__Tovoid = dart.constFn(dart.fnType(dart.void, [], {backgroundChannel: T.MethodChannelL()}, {})))(),
+    IdentityMapOfStringL$dynamic: () => (T.IdentityMapOfStringL$dynamic = dart.constFn(_js_helper.IdentityMap$(T.StringL(), dart.dynamic)))(),
+    MapOfStringL$boolL: () => (T.MapOfStringL$boolL = dart.constFn(core.Map$(T.StringL(), T.boolL())))(),
+    MapLOfStringL$boolL: () => (T.MapLOfStringL$boolL = dart.constFn(dart.legacy(T.MapOfStringL$boolL())))(),
+    MapOfStringL$dynamic: () => (T.MapOfStringL$dynamic = dart.constFn(core.Map$(T.StringL(), dart.dynamic)))(),
+    MapLOfStringL$dynamic: () => (T.MapLOfStringL$dynamic = dart.constFn(dart.legacy(T.MapOfStringL$dynamic())))(),
+    IdentityMapOfStringL$boolL: () => (T.IdentityMapOfStringL$boolL = dart.constFn(_js_helper.IdentityMap$(T.StringL(), T.boolL())))(),
+    LinkedHashMapOfStringL$dynamic: () => (T.LinkedHashMapOfStringL$dynamic = dart.constFn(collection.LinkedHashMap$(T.StringL(), dart.dynamic)))(),
+    FutureOfvoid: () => (T.FutureOfvoid = dart.constFn(async.Future$(dart.void)))(),
+    FutureLOfvoid: () => (T.FutureLOfvoid = dart.constFn(dart.legacy(T.FutureOfvoid())))(),
+    MethodCallL: () => (T.MethodCallL = dart.constFn(dart.legacy(message_codec.MethodCall)))(),
+    MethodCallLToFutureLOfvoid: () => (T.MethodCallLToFutureLOfvoid = dart.constFn(dart.fnType(T.FutureLOfvoid(), [T.MethodCallL()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: firebase_messaging.IosNotificationSettings.prototype,
+        [IosNotificationSettings_provisional]: false,
+        [IosNotificationSettings_badge]: true,
+        [IosNotificationSettings_alert]: true,
+        [IosNotificationSettings_sound]: true
+      });
+    },
+    get C1() {
+      return C[1] = dart.fn(firebase_messaging._fcmSetupBackgroundChannel, T.__Tovoid());
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: message_codecs.StandardMessageCodec.prototype
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: message_codecs.StandardMethodCodec.prototype,
+        [StandardMethodCodec_messageCodec]: C[4] || CT.C4
+      });
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: platform_channel.MethodChannel.prototype,
+        [MethodChannel__binaryMessenger]: null,
+        [MethodChannel_codec]: C[3] || CT.C3,
+        [MethodChannel_name]: "plugins.flutter.io/firebase_messaging"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: platform_channel.MethodChannel.prototype,
+        [MethodChannel__binaryMessenger]: null,
+        [MethodChannel_codec]: C[3] || CT.C3,
+        [MethodChannel_name]: "plugins.flutter.io/firebase_messaging_background"
+      });
+    }
+  }, false);
+  var C = Array(6).fill(void 0);
+  var I = ["package:firebase_messaging/firebase_messaging.dart"];
+  var _onMessage = dart.privateName(firebase_messaging, "_onMessage");
+  var _onBackgroundMessage = dart.privateName(firebase_messaging, "_onBackgroundMessage");
+  var _onLaunch = dart.privateName(firebase_messaging, "_onLaunch");
+  var _onResume = dart.privateName(firebase_messaging, "_onResume");
+  var _iosSettingsStreamController = dart.privateName(firebase_messaging, "_iosSettingsStreamController");
+  var _tokenStreamController = dart.privateName(firebase_messaging, "_tokenStreamController");
+  var _channel = dart.privateName(firebase_messaging, "_channel");
+  var IosNotificationSettings_provisional = dart.privateName(firebase_messaging, "IosNotificationSettings.provisional");
+  var IosNotificationSettings_badge = dart.privateName(firebase_messaging, "IosNotificationSettings.badge");
+  var IosNotificationSettings_alert = dart.privateName(firebase_messaging, "IosNotificationSettings.alert");
+  var IosNotificationSettings_sound = dart.privateName(firebase_messaging, "IosNotificationSettings.sound");
+  var _handleMethod = dart.privateName(firebase_messaging, "_handleMethod");
+  var MethodChannel__binaryMessenger = dart.privateName(platform_channel, "MethodChannel._binaryMessenger");
+  var StandardMethodCodec_messageCodec = dart.privateName(message_codecs, "StandardMethodCodec.messageCodec");
+  var MethodChannel_codec = dart.privateName(platform_channel, "MethodChannel.codec");
+  var MethodChannel_name = dart.privateName(platform_channel, "MethodChannel.name");
+  firebase_messaging.FirebaseMessaging = class FirebaseMessaging extends core.Object {
+    static new() {
+      return firebase_messaging.FirebaseMessaging._instance;
+    }
+    requestNotificationPermissions(iosSettings = C[0] || CT.C0) {
+      if (platform.defaultTargetPlatform != platform.TargetPlatform.iOS) {
+        return null;
+      }
+      return this[_channel].invokeMethod(T.boolL(), "requestNotificationPermissions", iosSettings.toMap());
+    }
+    get onIosSettingsRegistered() {
+      return this[_iosSettingsStreamController].stream;
+    }
+    configure(opts) {
+      let onMessage = opts && 'onMessage' in opts ? opts.onMessage : null;
+      let onBackgroundMessage = opts && 'onBackgroundMessage' in opts ? opts.onBackgroundMessage : null;
+      let onLaunch = opts && 'onLaunch' in opts ? opts.onLaunch : null;
+      let onResume = opts && 'onResume' in opts ? opts.onResume : null;
+      this[_onMessage] = onMessage;
+      this[_onLaunch] = onLaunch;
+      this[_onResume] = onResume;
+      this[_channel].setMethodCallHandler(dart.bind(this, _handleMethod));
+      this[_channel].invokeMethod(dart.void, "configure");
+      if (onBackgroundMessage != null) {
+        this[_onBackgroundMessage] = onBackgroundMessage;
+        let backgroundSetupHandle = ui.PluginUtilities.getCallbackHandle(C[1] || CT.C1);
+        let backgroundMessageHandle = ui.PluginUtilities.getCallbackHandle(this[_onBackgroundMessage]);
+        if (backgroundMessageHandle == null) {
+          dart.throw(new core.ArgumentError.new("Failed to setup background message handler! `onBackgroundMessage`\n          should be a TOP-LEVEL OR STATIC FUNCTION and should NOT be tied to a\n          class or an anonymous function."));
+        }
+        this[_channel].invokeMethod(T.boolL(), "FcmDartService#start", new (T.IdentityMapOfStringL$dynamic()).from(["setupHandle", backgroundSetupHandle.toRawHandle(), "backgroundHandle", backgroundMessageHandle.toRawHandle()]));
+      }
+    }
+    get onTokenRefresh() {
+      return this[_tokenStreamController].stream;
+    }
+    getToken() {
+      return async.async(T.StringL(), (function* getToken() {
+        return yield this[_channel].invokeMethod(T.StringL(), "getToken");
+      }).bind(this));
+    }
+    subscribeToTopic(topic) {
+      return this[_channel].invokeMethod(dart.void, "subscribeToTopic", topic);
+    }
+    unsubscribeFromTopic(topic) {
+      return this[_channel].invokeMethod(dart.void, "unsubscribeFromTopic", topic);
+    }
+    deleteInstanceID() {
+      return async.async(T.boolL(), (function* deleteInstanceID() {
+        return yield this[_channel].invokeMethod(T.boolL(), "deleteInstanceID");
+      }).bind(this));
+    }
+    autoInitEnabled() {
+      return async.async(T.boolL(), (function* autoInitEnabled() {
+        return yield this[_channel].invokeMethod(T.boolL(), "autoInitEnabled");
+      }).bind(this));
+    }
+    setAutoInitEnabled(enabled) {
+      return async.async(dart.void, (function* setAutoInitEnabled() {
+        yield this[_channel].invokeMethod(dart.void, "setAutoInitEnabled", enabled);
+      }).bind(this));
+    }
+    [_handleMethod](call) {
+      return async.async(dart.dynamic, (function* _handleMethod() {
+        let t0, t0$, t0$0;
+        switch (call.method) {
+          case "onToken":
+          {
+            let token = T.StringL().as(call.arguments);
+            this[_tokenStreamController].add(token);
+            return null;
+          }
+          case "onIosSettingsRegistered":
+          {
+            this[_iosSettingsStreamController].add(new firebase_messaging.IosNotificationSettings._fromMap(T.MapLOfStringL$boolL().as(dart.dgsend(call.arguments, [T.StringL(), T.boolL()], 'cast', []))));
+            return null;
+          }
+          case "onMessage":
+          {
+            t0 = dart.dgsend(call.arguments, [T.StringL(), dart.dynamic], 'cast', []);
+            return this[_onMessage](T.MapLOfStringL$dynamic().as(t0));
+          }
+          case "onLaunch":
+          {
+            t0$ = dart.dgsend(call.arguments, [T.StringL(), dart.dynamic], 'cast', []);
+            return this[_onLaunch](T.MapLOfStringL$dynamic().as(t0$));
+          }
+          case "onResume":
+          {
+            t0$0 = dart.dgsend(call.arguments, [T.StringL(), dart.dynamic], 'cast', []);
+            return this[_onResume](T.MapLOfStringL$dynamic().as(t0$0));
+          }
+          default:
+          {
+            dart.throw(new core.UnsupportedError.new("Unrecognized JSON message"));
+          }
+        }
+      }).bind(this));
+    }
+  };
+  (firebase_messaging.FirebaseMessaging.private = function(channel) {
+    this[_onMessage] = null;
+    this[_onBackgroundMessage] = null;
+    this[_onLaunch] = null;
+    this[_onResume] = null;
+    this[_iosSettingsStreamController] = T.StreamControllerOfIosNotificationSettingsL().broadcast();
+    this[_tokenStreamController] = T.StreamControllerOfStringL().broadcast();
+    this[_channel] = channel;
+    ;
+  }).prototype = firebase_messaging.FirebaseMessaging.prototype;
+  dart.addTypeTests(firebase_messaging.FirebaseMessaging);
+  dart.addTypeCaches(firebase_messaging.FirebaseMessaging);
+  dart.setMethodSignature(firebase_messaging.FirebaseMessaging, () => ({
+    __proto__: dart.getMethods(firebase_messaging.FirebaseMessaging.__proto__),
+    requestNotificationPermissions: dart.fnType(dart.legacy(async.FutureOr$(dart.legacy(core.bool))), [], [dart.legacy(firebase_messaging.IosNotificationSettings)]),
+    configure: dart.fnType(dart.void, [], {onBackgroundMessage: dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))])), onLaunch: dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))])), onMessage: dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))])), onResume: dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]))}, {}),
+    getToken: dart.fnType(dart.legacy(async.Future$(dart.legacy(core.String))), []),
+    subscribeToTopic: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.legacy(core.String)]),
+    unsubscribeFromTopic: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.legacy(core.String)]),
+    deleteInstanceID: dart.fnType(dart.legacy(async.Future$(dart.legacy(core.bool))), []),
+    autoInitEnabled: dart.fnType(dart.legacy(async.Future$(dart.legacy(core.bool))), []),
+    setAutoInitEnabled: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.legacy(core.bool)]),
+    [_handleMethod]: dart.fnType(dart.legacy(async.Future), [dart.legacy(message_codec.MethodCall)])
+  }));
+  dart.setGetterSignature(firebase_messaging.FirebaseMessaging, () => ({
+    __proto__: dart.getGetters(firebase_messaging.FirebaseMessaging.__proto__),
+    onIosSettingsRegistered: dart.legacy(async.Stream$(dart.legacy(firebase_messaging.IosNotificationSettings))),
+    onTokenRefresh: dart.legacy(async.Stream$(dart.legacy(core.String)))
+  }));
+  dart.setLibraryUri(firebase_messaging.FirebaseMessaging, I[0]);
+  dart.setFieldSignature(firebase_messaging.FirebaseMessaging, () => ({
+    __proto__: dart.getFields(firebase_messaging.FirebaseMessaging.__proto__),
+    [_channel]: dart.finalFieldType(dart.legacy(platform_channel.MethodChannel)),
+    [_onMessage]: dart.fieldType(dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]))),
+    [_onBackgroundMessage]: dart.fieldType(dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]))),
+    [_onLaunch]: dart.fieldType(dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]))),
+    [_onResume]: dart.fieldType(dart.legacy(dart.fnType(dart.legacy(async.Future), [dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic))]))),
+    [_iosSettingsStreamController]: dart.finalFieldType(dart.legacy(async.StreamController$(dart.legacy(firebase_messaging.IosNotificationSettings)))),
+    [_tokenStreamController]: dart.finalFieldType(dart.legacy(async.StreamController$(dart.legacy(core.String))))
+  }));
+  dart.defineLazy(firebase_messaging.FirebaseMessaging, {
+    /*firebase_messaging.FirebaseMessaging._instance*/get _instance() {
+      return new firebase_messaging.FirebaseMessaging.private(C[2] || CT.C2);
+    }
+  }, true);
+  const sound$ = IosNotificationSettings_sound;
+  const alert$ = IosNotificationSettings_alert;
+  const badge$ = IosNotificationSettings_badge;
+  const provisional$ = IosNotificationSettings_provisional;
+  firebase_messaging.IosNotificationSettings = class IosNotificationSettings extends core.Object {
+    get sound() {
+      return this[sound$];
+    }
+    set sound(value) {
+      super.sound = value;
+    }
+    get alert() {
+      return this[alert$];
+    }
+    set alert(value) {
+      super.alert = value;
+    }
+    get badge() {
+      return this[badge$];
+    }
+    set badge(value) {
+      super.badge = value;
+    }
+    get provisional() {
+      return this[provisional$];
+    }
+    set provisional(value) {
+      super.provisional = value;
+    }
+    toMap() {
+      return new (T.IdentityMapOfStringL$boolL()).from(["sound", this.sound, "alert", this.alert, "badge", this.badge, "provisional", this.provisional]);
+    }
+    toString() {
+      return "PushNotificationSettings " + dart.str(this.toMap());
+    }
+  };
+  (firebase_messaging.IosNotificationSettings.new = function(opts) {
+    let sound = opts && 'sound' in opts ? opts.sound : true;
+    let alert = opts && 'alert' in opts ? opts.alert : true;
+    let badge = opts && 'badge' in opts ? opts.badge : true;
+    let provisional = opts && 'provisional' in opts ? opts.provisional : false;
+    this[sound$] = sound;
+    this[alert$] = alert;
+    this[badge$] = badge;
+    this[provisional$] = provisional;
+    ;
+  }).prototype = firebase_messaging.IosNotificationSettings.prototype;
+  (firebase_messaging.IosNotificationSettings._fromMap = function(settings) {
+    this[sound$] = settings[$_get]("sound");
+    this[alert$] = settings[$_get]("alert");
+    this[badge$] = settings[$_get]("badge");
+    this[provisional$] = settings[$_get]("provisional");
+    ;
+  }).prototype = firebase_messaging.IosNotificationSettings.prototype;
+  dart.addTypeTests(firebase_messaging.IosNotificationSettings);
+  dart.addTypeCaches(firebase_messaging.IosNotificationSettings);
+  dart.setMethodSignature(firebase_messaging.IosNotificationSettings, () => ({
+    __proto__: dart.getMethods(firebase_messaging.IosNotificationSettings.__proto__),
+    toMap: dart.fnType(dart.legacy(core.Map$(dart.legacy(core.String), dart.dynamic)), []),
+    toString: dart.fnType(dart.legacy(core.String), []),
+    [$toString]: dart.fnType(dart.legacy(core.String), [])
+  }));
+  dart.setLibraryUri(firebase_messaging.IosNotificationSettings, I[0]);
+  dart.setFieldSignature(firebase_messaging.IosNotificationSettings, () => ({
+    __proto__: dart.getFields(firebase_messaging.IosNotificationSettings.__proto__),
+    sound: dart.finalFieldType(dart.legacy(core.bool)),
+    alert: dart.finalFieldType(dart.legacy(core.bool)),
+    badge: dart.finalFieldType(dart.legacy(core.bool)),
+    provisional: dart.finalFieldType(dart.legacy(core.bool))
+  }));
+  dart.defineExtensionMethods(firebase_messaging.IosNotificationSettings, ['toString']);
+  firebase_messaging._fcmSetupBackgroundChannel = function _fcmSetupBackgroundChannel(opts) {
+    let backgroundChannel = opts && 'backgroundChannel' in opts ? opts.backgroundChannel : C[5] || CT.C5;
+    return async.async(dart.void, function* _fcmSetupBackgroundChannel() {
+      binding.WidgetsFlutterBinding.ensureInitialized();
+      backgroundChannel.setMethodCallHandler(dart.fn(call => async.async(dart.void, function*() {
+        if (call.method === "handleBackgroundMessage") {
+          let handle = new ui.CallbackHandle.fromRawHandle(core.int.as(dart.dsend(call.arguments, '_get', ["handle"])));
+          let handlerFunction = ui.PluginUtilities.getCallbackFromHandle(handle);
+          try {
+            yield dart.dcall(handlerFunction, [T.LinkedHashMapOfStringL$dynamic().from(core.Map.as(dart.dsend(call.arguments, '_get', ["message"])))]);
+          } catch (e$) {
+            let e = dart.getThrown(e$);
+            core.print("Unable to handle incoming background message.");
+            core.print(e);
+          }
+          return T.FutureOfvoid().value();
+        }
+      }), T.MethodCallLToFutureLOfvoid()));
+      backgroundChannel.invokeMethod(dart.void, "FcmDartService#initialized");
+    });
+  };
+  dart.trackLibraries("packages/firebase_messaging/firebase_messaging.dart", {
+    "package:firebase_messaging/firebase_messaging.dart": firebase_messaging
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["firebase_messaging.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyDiC;IAAS;mCAoBd;AAExB,UAAI,AAAsB,kCAAkB;AAC1C,cAAO;;AAET,YAAO,AAAS,wCACd,kCACA,AAAY,WAAD;IAEf;;AASE,YAAO,AAA6B;IACtC;;UAIiB;UACA;UACA;UACA;AAEO,MAAtB,mBAAa,SAAS;AACF,MAApB,kBAAY,QAAQ;AACA,MAApB,kBAAY,QAAQ;AACwB,MAA5C,AAAS,8CAAqB;AACU,MAAxC,AAAS,uCAAmB;AAC5B,UAAI,AAAoB,mBAAD;AACqB,QAA1C,6BAAuB,mBAAmB;AACrB,oCACD;AACC,sCACD,qCAAkB;AAEtC,YAAI,AAAwB,uBAAD;AAKxB,UAJD,WAAM,2BACJ;;AAYH,QAND,AAAS,uCACP,wBACiB,6CACf,eAAe,AAAsB,qBAAD,gBACpC,oBAAoB,AAAwB,uBAAD;;IAInD;;AAOE,YAAO,AAAuB;IAChC;;AAGuB;AACrB,cAAO,OAAM,AAAS,yCAAqB;MAC7C;;qBAMqC;AACnC,YAAO,AAAS,wCAAmB,oBAAoB,KAAK;IAC9D;yBAGyC;AACvC,YAAO,AAAS,wCAAmB,wBAAwB,KAAK;IAClE;;AAO6B;AAC3B,cAAO,OAAM,AAAS,uCAAmB;MAC3C;;;AAG4B;AAC1B,cAAO,OAAM,AAAS,uCAAmB;MAC3C;;uBAGqC;AAAN;AACmC,QAAhE,MAAM,AAAS,uCAAmB,sBAAsB,OAAO;MACjE;;oBAEyC;AAAZ;;AAC3B,gBAAQ,AAAK,IAAD;;;AAEK,uCAAQ,AAAK,IAAD;AACQ,YAAjC,AAAuB,iCAAI,KAAK;AAChC,kBAAO;;;;AAGkC,YADzC,AAA6B,uCAA4B,mFACtC,YAAf,AAAK,IAAD;AACR,kBAAO;;;;AAEP,iBAAiC,YAAf,AAAK,IAAD;kBAAf,AAAU,kBAAgB;;;;AAEjC,kBAAgC,YAAf,AAAK,IAAD;kBAAd,AAAS,iBAAgB;;;;AAEhC,mBAAgC,YAAf,AAAK,IAAD;kBAAd,AAAS,iBAAgB;;;;AAEmB,YAAnD,WAAM,8BAAiB;;;MAE7B;;;2DA3IwC;IAOzB;IACA;IACA;IACA;IAkBiC,qCAC5C;IA8C2B,+BAC3B;IA5EwD,iBAAE,OAAO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MAEtC,8CAAS;YAAqB;;;;;;;;IA0JlD;;;;;;IACA;;;;;;IACA;;;;;;IACA;;;;;;;AAIT,YAAqB,4CACnB,SAAS,YACT,SAAS,YACT,SAAS,YACT,eAAe;IAEnB;;AAGqB,YAAA,AAAqC,wCAAT;IAAS;;;QA5BnD;QACA;QACA;QACA;IAHA;IACA;IACA;IACA;;EACL;kEAEiD;IACvC,eAAE,AAAQ,QAAA,QAAC;IACX,eAAE,AAAQ,QAAA,QAAC;IACX,eAAE,AAAQ,QAAA,QAAC;IACL,qBAAE,AAAQ,QAAA,QAAC;;EAAc;;;;;;;;;;;;;;;;;;;QA/L1B;AADY;AAIY,MAAnB;AAmBpB,MAfF,AAAkB,iBAAD,sBAAsB,QAAY;AACjD,YAAI,AAAK,AAAO,IAAR,YAAW;AACI,uBACF,gDAA4B,WAAd,AAAK,IAAD,qBAAW;AACjC,gCACK,yCAAsB,MAAM;AAChD;AAE2D,YADzD,MAAqB,WAAf,eAAe,GACjB,oDAAwC,WAAd,AAAK,IAAD,qBAAW;;gBACtC;AAC+C,YAAtD,WAAM;AACE,YAAR,WAAM,CAAC;;AAET,gBAAO;;MAEV;AAIiE,MAAlE,AAAkB,iBAAD,yBAAoB;IACvC","file":"../../../../../../../packages/firebase_messaging/firebase_messaging.dart.lib.js"}');
+  // Exports:
+  return {
+    firebase_messaging: firebase_messaging
+  };
+}));
+
+//# sourceMappingURL=firebase_messaging.dart.lib.js.map

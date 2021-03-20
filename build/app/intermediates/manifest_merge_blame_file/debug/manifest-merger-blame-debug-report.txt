@@ -1,0 +1,351 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.fcm_flutter_notification"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:12:13-75
+14-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:12:30-72
+15
+16    <meta-data
+16-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:50:5-52:25
+17        android:name="flutterEmbedding"
+17-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:51:5-36
+18        android:value="2" />
+18-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:52:5-22
+19
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+20-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+21-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+22    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+22-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+22-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:22:5-79
+23-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:22:22-76
+24    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+24-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:24:5-68
+24-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:24:22-65
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:26:5-82
+25-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:26:22-79
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- <application android:name=".Application"> -->
+26-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+27    <application
+27-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:15:5-49:19
+28        android:name="com.example.fcm_flutter_notification.Application"
+28-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:17:9-36
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.3.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\685682e655e81819e094ee22eb8c5ada\core-1.3.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher"
+31-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:19:9-43
+32        android:label="notification" >
+32-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:18:9-37
+33        <activity
+33-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:20:9-47:20
+34            android:name="com.example.fcm_flutter_notification.MainActivity"
+34-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:21:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:24:13-163
+36            android:hardwareAccelerated="true"
+36-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:25:13-47
+37            android:launchMode="singleTop"
+37-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:22:14-44
+38            android:theme="@style/LaunchTheme"
+38-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:23:13-47
+39            android:windowSoftInputMode="adjustResize" >
+39-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:26:13-55
+40            <meta-data
+40-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:27:1-29:64
+41                android:name="com.google.firebase.messaging.default_notification_channel_id"
+41-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:28:15-91
+42                android:value="default_notification_channel_id" />
+42-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:29:15-62
+43            <meta-data
+43-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:30:15-33:17
+44                android:name="io.flutter.embedding.android.NormalTheme"
+44-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:31:15-70
+45                android:resource="@style/NormalTheme" />
+45-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:32:15-52
+46            <meta-data
+46-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:34:16-37:17
+47                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+47-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:35:15-79
+48                android:resource="@drawable/launch_background" />
+48-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:36:15-61
+49
+50            <intent-filter>
+50-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:38:13-41:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:39:17-68
+51-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:39:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:40:17-76
+53-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:40:27-74
+54            </intent-filter>
+55            <intent-filter>
+55-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:42:13-45:29
+56                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+56-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:43:17-69
+56-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:43:25-66
+57
+58                <category android:name="android.intent.category.DEFAULT" />
+58-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:44:17-76
+58-->C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\android\app\src\main\AndroidManifest.xml:44:27-73
+59            </intent-filter>
+60        </activity>
+61
+62        <service android:name="io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService" >
+62-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+62-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-101
+63            <intent-filter>
+63-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+64                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+64-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+64-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+65            </intent-filter>
+66        </service>
+67        <service
+67-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:19
+68            android:name="com.google.firebase.components.ComponentDiscoveryService"
+68-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:18-89
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+70            android:exported="false" >
+70-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\7463cd1d73da5c978f50b9ef54ca50b1\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:10:13-37
+71            <meta-data
+71-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-16:85
+72                android:name="com.google.firebase.components:io.flutter.plugins.firebasemessaging.FlutterFirebaseAppRegistrar"
+72-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-127
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-82
+74            <meta-data
+74-->[:firebase_core] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+75                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+75-->[:firebase_core] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[:firebase_core] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\7463cd1d73da5c978f50b9ef54ca50b1\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:11:13-13:85
+78                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+78-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\7463cd1d73da5c978f50b9ef54ca50b1\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:12:17-126
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\7463cd1d73da5c978f50b9ef54ca50b1\firebase-analytics-ktx-18.0.0\AndroidManifest.xml:13:17-82
+80            <meta-data
+80-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\3400067985cfc8eadc3e0224c138c7ac\firebase-common-ktx-19.4.0\AndroidManifest.xml:15:13-17:85
+81                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+81-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\3400067985cfc8eadc3e0224c138c7ac\firebase-common-ktx-19.4.0\AndroidManifest.xml:16:17-113
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-common-ktx:19.4.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\3400067985cfc8eadc3e0224c138c7ac\firebase-common-ktx-19.4.0\AndroidManifest.xml:17:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+84                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+84-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+87-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+89            <meta-data
+89-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\0aa56d565cd7abefe101ba4746c92f7a\play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+90                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+90-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\0aa56d565cd7abefe101ba4746c92f7a\play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\0aa56d565cd7abefe101ba4746c92f7a\play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+92            <meta-data
+92-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\823fa092e738aaad8f2ab60d0158c68f\firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+93                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+93-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\823fa092e738aaad8f2ab60d0158c68f\firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\823fa092e738aaad8f2ab60d0158c68f\firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+95            <meta-data
+95-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\77f70e8950e7b92f904ae09d619acf20\firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+96                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+96-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\77f70e8950e7b92f904ae09d619acf20\firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\77f70e8950e7b92f904ae09d619acf20\firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+98            <!--
+99                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+100                clients to use it as well, by defining this registrar in their own core/common library.
+101            -->
+102            <meta-data
+102-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+103                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+103-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+105        </service>
+106
+107        <activity
+107-->[:url_launcher] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+108            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+108-->[:url_launcher] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+109            android:exported="false"
+109-->[:url_launcher] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+110            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+110-->[:url_launcher] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+111
+112        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+112-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
+112-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
+113        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+113-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
+113-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
+114            <intent-filter>
+114-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
+115                <action android:name="android.intent.action.BOOT_COMPLETED" />
+115-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-79
+115-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:25-76
+116                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+116-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-84
+116-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:25-81
+117                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+117-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-82
+117-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:25-79
+118                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+118-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-82
+118-->[:flutter_local_notifications] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:25-79
+119            </intent-filter>
+120        </receiver>
+121        <!--
+122             FirebaseMessagingService performs security checks at runtime,
+123             but set to not exported to explicitly avoid allowing another app to call it.
+124        -->
+125        <service
+125-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+126            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+126-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+128            android:exported="false" >
+128-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\b1611f964328473c7d9452fe202a61ef\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+129            <intent-filter android:priority="-500" >
+129-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:29
+130                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+130-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-78
+130-->[:firebase_messaging] C:\Users\adity\OneDrive\Desktop\flutter\fmcotification\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:10:25-75
+131            </intent-filter>
+132        </service>
+133
+134        <receiver
+134-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+135            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+135-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+136            android:exported="true"
+136-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+137            android:permission="com.google.android.c2dm.permission.SEND" >
+137-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+138            <intent-filter>
+138-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+139                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+139-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:42:17-81
+139-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\6102f88d68cea6313def9199299eca94\firebase-iid-21.0.1\AndroidManifest.xml:42:25-78
+140            </intent-filter>
+141        </receiver>
+142        <receiver
+142-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+143            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+143-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+145            android:exported="false" >
+145-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+146        </receiver>
+147
+148        <service
+148-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+149            android:name="com.google.android.gms.measurement.AppMeasurementService"
+149-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+150            android:enabled="true"
+150-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+151            android:exported="false" />
+151-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+152        <service
+152-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+153            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+153-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+156            android:permission="android.permission.BIND_JOB_SERVICE" />
+156-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d8d3a83e0b074c8e554ed9789636d858\play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+157
+158        <provider
+158-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+159            android:name="com.google.firebase.provider.FirebaseInitProvider"
+159-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+160            android:authorities="com.example.fcm_flutter_notification.firebaseinitprovider"
+160-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+161            android:directBootAware="true"
+161-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+162            android:exported="false"
+162-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+163            android:initOrder="100" />
+163-->[com.google.firebase:firebase-common:19.5.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\5ff01972b39f66f238ee54c21b7d6827\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+164
+165        <activity
+165-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\57ed892f0235fd6c3c4ff0496ecbbdf9\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+166            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+166-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\57ed892f0235fd6c3c4ff0496ecbbdf9\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+167            android:exported="false"
+167-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\57ed892f0235fd6c3c4ff0496ecbbdf9\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+168            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+168-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\57ed892f0235fd6c3c4ff0496ecbbdf9\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+169
+170        <meta-data
+170-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\200fe82d55fe8ddd15ab2e6a20097ce8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+171            android:name="com.google.android.gms.version"
+171-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\200fe82d55fe8ddd15ab2e6a20097ce8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+172            android:value="@integer/google_play_services_version" />
+172-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\200fe82d55fe8ddd15ab2e6a20097ce8\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+173
+174        <service
+174-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+175            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+175-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+176            android:exported="false" >
+176-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+177            <meta-data
+177-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+178                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+178-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+179                android:value="cct" />
+179-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\cf6b84c8bfa4d3de57dc853b267e5211\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+180        </service>
+181        <service
+181-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+182            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+182-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+183            android:exported="false"
+183-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+184            android:permission="android.permission.BIND_JOB_SERVICE" >
+184-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+185        </service>
+186
+187        <receiver
+187-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+188            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+188-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+189            android:exported="false" />
+189-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\adity\.gradle\caches\transforms-2\files-2.1\d2714eaea0b1c6ccd2f4809b27ff6020\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+190    </application>
+191
+192</manifest>
