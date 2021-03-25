@@ -13,15 +13,19 @@ Map<String, String> hashtable = {
   "CD_Lab": "https://meet.google.com/lookup/dwu4dxexws",
   "DBMS": "https://meet.google.com/lookup/f4ssgkw4zw",
   "Employ_Skills": "https://meet.google.com/sxd-dbwi-rny",
-  "AI_LAB": "https://meet.google.com/lookup/e4usu5shw5",
+  "AI_LAB": "https://meet.google.com/lookup/dh2263iaer?authuser=1&hs=179",
   "HPC": "https://meet.google.com/lookup/hlvldnzh2c",
   "Comprehension": "https://meet.google.com/lookup/fkdunojrfx",
   "FiberOptics": "https://meet.google.com/lookup/bot3dx7irh",
   "MOOC": "https://meet.google.com/lookup/fu75y63g3o",
-  "AI": "https://meet.google.com/lookup/dh2263iaer",
+  "AI": "https://meet.google.com/lookup/fbyfl7jilv",
   "Competitive_skills": "https://meet.google.com/lookup/cizbohpwv7",
   "Indian_Art": "https://meet.google.com/lookup/fp6y6zdtsf",
-  "NRA": "https://meet.google.com/lookup/bzy3ciecsv"
+  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
+  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
+  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
+
+
 };
 
 String Dip = "https://meet.google.com/lookup/hw6zi4pgnu?authuser=1&hs=179";
