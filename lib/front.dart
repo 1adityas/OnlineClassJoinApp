@@ -59,7 +59,7 @@ class front extends StatelessWidget {
                 setElev1('DIP');
               },
               child: Text(
-                "Network Security",
+                "Network Security b1",
               )),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -67,7 +67,18 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NS');
+                setElev1('NSb1');
+              },
+              child: Text(
+                "Network Security b2",
+              )),
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black12, // background
+                onPrimary: Colors.white70, // foreground
+              ),
+              onPressed: () {
+                setElev1('NSb2');
               },
               child: Text(
                 "Digital Image Processing",
@@ -101,10 +112,21 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NRA');
+                setElev1('NRAb1');
               },
               child: Text(
-                "Network Routing Algorithms",
+                "Network Routing Algorithms b1",
+              )),
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.black12, // background
+                onPrimary: Colors.white70, // foreground
+              ),
+              onPressed: () {
+                setElev1('NRAb2');
+              },
+              child: Text(
+                "Network Routing Algorithms b2",
               )),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
