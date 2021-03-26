@@ -74,6 +74,7 @@ class mymainPage extends State<mainPage> {
 
   @override
   Widget build(BuildContext context) {
+    refresh();
     return new Container(
         child: new Stack(fit: StackFit.expand, children: <Widget>[
       new Image.asset(

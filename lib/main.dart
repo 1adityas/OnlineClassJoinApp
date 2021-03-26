@@ -39,7 +39,7 @@ class MyAppState extends State<MyApp> {
     return MaterialApp(
       initialRoute: flag == false ? 'front' : 'mainPage',
       routes: {
-        'front': (context) => front(),
+        'front': (context) => front(),  
         'mainPage': (context) => mainPage()
       },
     );

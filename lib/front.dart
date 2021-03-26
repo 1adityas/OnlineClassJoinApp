@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:classnotif/mainPage.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -101,7 +104,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('HCP');
+                setElev2('HCP');
               },
               child: Text(
                 "High Performance Computing",
@@ -112,7 +115,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NRAb1');
+                setElev2('NRAb1');
               },
               child: Text(
                 "Network Routing Algorithms b1",
@@ -123,7 +126,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NRAb2');
+                setElev2('NRAb2');
               },
               child: Text(
                 "Network Routing Algorithms b2",
@@ -134,15 +137,31 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('WSN');
+                setElev2('WSN');
               },
               child: Text(
                 "Wireless Sensor Networks",
               )),
+          ElevatedButton(
+              onPressed: () {
+                check(context);
+              },
+              child: Text("continue"))
         ],
       )
     ]));
   }
+}
+
+Future check(context) async {
+  var ff = await getElev1();
+  var fff = await getElev2();
+  Timer(Duration(seconds: 0), () {
+    if (ff != 'false' && fff != 'false')
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => mainPage()));
+    print("Yeah, this line is printed after 1 seconds");
+  });
 }
 
 Future setElev1(s) async {
@@ -157,15 +176,15 @@ Future setElev2(s) async {
 
 Future getElev1() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  String s = prefs.getString("elec1") ?? false;
-  // print(f);
+  String s = prefs.getString("elec1") ?? 'false';
+  print(s);
   return s;
 }
 
 Future getElev2() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  String s = prefs.getString("elec1") ?? false;
-  // print(f);
+  String s = prefs.getString("elec2") ?? 'false';
+  print(s);
   return s;
 }
 
