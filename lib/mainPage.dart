@@ -21,18 +21,16 @@ class mymainPage extends State<mainPage> {
   // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   //     FlutterLocalNotificationsPlugin();
 
-  refresh() async {
+  Future refresh() async {
     // print("looks like it is working");
 
-    setState(() async {
+    Future setState;(() async {
       int currTime = timeCondition();
       int currWeek = weekCondition();
       print(currTime);
 
       if (currWeek == 0 || currTime == 0) {
         linkName = 'chill';
-
-        
         link =
             "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
       } else {

@@ -23,7 +23,7 @@ Map<String, String> hashtable = {
   "Indian_Art": "https://meet.google.com/lookup/fp6y6zdtsf",
   "NRAb1": "https://meet.google.com/lookup/bzy3ciecsv",///
   "NRAb2": "https://meet.google.com/zvd-huha-aec ",///
-  "WSN": "",
+  "WSN": "https://www.google.com/",
   "NSb1": "",
   "NSb2": "https://meet.google.com/ixv-uqka-ofa "///
 

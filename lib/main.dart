@@ -6,11 +6,7 @@
 
 import 'package:classnotif/mainPage.dart';
 import 'package:flutter/material.dart';
-import 'myglobals.dart';
 import 'front.dart';
-
-import 'package:url_launcher/url_launcher.dart';
-import 'dart:ui' as ui;
 
 bool flag;
 Future main() async {
