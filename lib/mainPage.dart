@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'myglobals.dart';
 import 'front.dart';
@@ -23,25 +25,27 @@ class mymainPage extends State<mainPage> {
 
   Future refresh() async {
     // print("looks like it is working");
-
-    Future setState;(() async {
+    setState(() async {
       int currTime = timeCondition();
       int currWeek = weekCondition();
-      print(currTime);
+      // print(currTime);
 
       if (currWeek == 0 || currTime == 0) {
         linkName = 'chill';
         link =
             "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
       } else {
-        linkName = table[currWeek][currTime];
-        if (linkName == 'elec1' || linkName == 'elec2') {
-          if (linkName == 'elec1')
+        String _linkName = table[currWeek][currTime];
+        if (_linkName == 'elec1' || _linkName == 'elec2') {
+          if (_linkName == 'elec1') {
             linkName = await getElev1();
-          else
+            print(linkName);
+          } else
             linkName = await getElev2();
-        }
+        } else
+          linkName = _linkName;
         link = hashtable[linkName];
+        print(linkName);
       }
     });
   }

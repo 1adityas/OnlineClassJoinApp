@@ -59,7 +59,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('DIP');
+                setElev1('NSb1');
               },
               child: Text(
                 "Network Security b1",
@@ -70,7 +70,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NSb1');
+                setElev1('NSb2');
               },
               child: Text(
                 "Network Security b2",
@@ -81,7 +81,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev1('NSb2');
+                setElev1('DIP');
               },
               child: Text(
                 "Digital Image Processing",

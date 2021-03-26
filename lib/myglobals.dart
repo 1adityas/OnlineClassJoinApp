@@ -9,7 +9,7 @@ String linkName = 'No class';
 Map<String, String> hashtable = {
   "chill":
       "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg",
-  "Dip": "https://meet.google.com/lookup/hw6zi4pgnu?authuser=1&hs=179",
+  "DIP": "https://meet.google.com/lookup/hw6zi4pgnu?authuser=1&hs=179",
   "CD_Lab": "https://meet.google.com/lookup/dwu4dxexws",
   "DBMS": "https://meet.google.com/lookup/f4ssgkw4zw",
   "Employ_Skills": "https://meet.google.com/sxd-dbwi-rny",
@@ -21,14 +21,17 @@ Map<String, String> hashtable = {
   "AI": "https://meet.google.com/lookup/fbyfl7jilv",
   "Competitive_skills": "https://meet.google.com/lookup/cizbohpwv7",
   "Indian_Art": "https://meet.google.com/lookup/fp6y6zdtsf",
-  "NRAb1": "https://meet.google.com/lookup/bzy3ciecsv",///
-  "NRAb2": "https://meet.google.com/zvd-huha-aec ",///
+  "NRAb1": "https://meet.google.com/lookup/bzy3ciecsv",
+
+  ///
+  "NRAb2": "https://meet.google.com/zvd-huha-aec ",
+
+  ///
   "WSN": "https://www.google.com/",
-  "NSb1": "",
-  "NSb2": "https://meet.google.com/ixv-uqka-ofa "///
+  "NSb1": "https://meet.google.com/rcw-itti-ovj",
+  "NSb2": "https://meet.google.com/ixv-uqka-ofa "
 
-
-
+  ///
 };
 
 String Dip = "https://meet.google.com/lookup/hw6zi4pgnu?authuser=1&hs=179";
@@ -51,7 +54,15 @@ var table = [
   ["chill", "elec2", "DBMS", "FiberOptics", "Indian_Art", "CD_Lab", "chill"],
   ["chill", "elec1", "Employ_Skills", "chill", "DBMS", "AI_LAB", "CD_Lab"],
   ["chill", "elec2", "Comprehension", "FiberOptics", "chill", "MOOC", "AI_LAB"],
-  ["chill", "AI", "CD_Lab", "DBMS", "elec1", "Competitive_skills", "FiberOptics"],
+  [
+    "chill",
+    "AI",
+    "CD_Lab",
+    "DBMS",
+    "elec1",
+    "Competitive_skills",
+    "FiberOptics"
+  ],
 ];
 
 // Map<int,String> hashtable ={0:"https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg",1:};
