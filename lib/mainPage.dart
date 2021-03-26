@@ -21,10 +21,10 @@ class mymainPage extends State<mainPage> {
   // FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
   //     FlutterLocalNotificationsPlugin();
 
-  refresh() {
+  refresh() async {
     // print("looks like it is working");
 
-    setState(() {
+    setState(() async {
       int currTime = timeCondition();
       int currWeek = weekCondition();
       print(currTime);
@@ -35,6 +35,12 @@ class mymainPage extends State<mainPage> {
             "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
       } else {
         linkName = table[currWeek][currTime];
+        if (linkName == 'elec1' || linkName == 'elec2') {
+          if (linkName == 'elec1')
+            linkName = await getElev1();
+          else
+            linkName = await getElev2();
+        }
         link = hashtable[linkName];
       }
     });

@@ -156,12 +156,14 @@ class front extends StatelessWidget {
 Future check(context) async {
   var ff = await getElev1();
   var fff = await getElev2();
-  Timer(Duration(seconds: 0), () {
-    if (ff != 'false' && fff != 'false')
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => mainPage()));
-    print("Yeah, this line is printed after 1 seconds");
-  });
+
+  if (ff != 'false' && fff != 'false') {
+    await setVisitFlag();
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => mainPage()));
+  }
+  print("check done if");
+  ;
 }
 
 Future setElev1(s) async {

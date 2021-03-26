@@ -21,9 +21,12 @@ Map<String, String> hashtable = {
   "AI": "https://meet.google.com/lookup/fbyfl7jilv",
   "Competitive_skills": "https://meet.google.com/lookup/cizbohpwv7",
   "Indian_Art": "https://meet.google.com/lookup/fp6y6zdtsf",
-  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
-  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
-  "NRA": "https://meet.google.com/lookup/bzy3ciecsv",
+  "NRAb1": "https://meet.google.com/lookup/bzy3ciecsv",///
+  "NRAb2": "https://meet.google.com/zvd-huha-aec ",///
+  "WSN": "",
+  "NSb1": "",
+  "NSb2": "https://meet.google.com/ixv-uqka-ofa "///
+
 
 
 };
@@ -44,11 +47,11 @@ String NRA = "https://meet.google.com/lookup/bzy3ciecsv";
 
 var table = [
   ["chill", "chill", "chill", "chill", "chill", "chill", "chill"],
-  ["chill", "Dip", "CD_Lab", "AI", "NRA", "DBMS", "Indian_Art"],
-  ["chill", "NRA", "DBMS", "FiberOptics", "Indian_Art", "CD_Lab", "chill"],
-  ["chill", "Dip", "Employ_Skills", "chill", "DBMS", "AI_LAB", "CD_Lab"],
-  ["chill", "NRA", "Comprehension", "FiberOptics", "chill", "MOOC", "AI_LAB"],
-  ["chill", "AI", "CD_Lab", "DBMS", "Dip", "Competitive_skills", "FiberOptics"],
+  ["chill", "elec1", "CD_Lab", "AI", "elec2", "DBMS", "Indian_Art"],
+  ["chill", "elec2", "DBMS", "FiberOptics", "Indian_Art", "CD_Lab", "chill"],
+  ["chill", "elec1", "Employ_Skills", "chill", "DBMS", "AI_LAB", "CD_Lab"],
+  ["chill", "elec2", "Comprehension", "FiberOptics", "chill", "MOOC", "AI_LAB"],
+  ["chill", "AI", "CD_Lab", "DBMS", "elec1", "Competitive_skills", "FiberOptics"],
 ];
 
 // Map<int,String> hashtable ={0:"https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg",1:};
