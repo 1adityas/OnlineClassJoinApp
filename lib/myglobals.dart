@@ -7,7 +7,7 @@ String linkName = 'No class';
 // String name = "No class";
 
 Map<String, String> hashtable = {
-  "chill":
+  "No_class":
       "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg",
   "DIP": "https://meet.google.com/lookup/hw6zi4pgnu?authuser=1&hs=179",
   "CD_Lab": "https://meet.google.com/lookup/dwu4dxexws",
@@ -49,13 +49,45 @@ String Indian_Art = "https://meet.google.com/lookup/fp6y6zdtsf";
 String NRA = "https://meet.google.com/lookup/bzy3ciecsv";
 
 var table = [
-  ["chill", "chill", "chill", "chill", "chill", "chill", "chill"],
-  ["chill", "elec1", "CD_Lab", "AI", "elec2", "DBMS", "Indian_Art"],
-  ["chill", "elec2", "DBMS", "FiberOptics", "Indian_Art", "CD_Lab", "chill"],
-  ["chill", "elec1", "Employ_Skills", "chill", "DBMS", "AI_LAB", "CD_Lab"],
-  ["chill", "elec2", "Comprehension", "FiberOptics", "chill", "MOOC", "AI_LAB"],
   [
-    "chill",
+    "No_class",
+    "No_class",
+    "No_class",
+    "No_class",
+    "No_class",
+    "No_class",
+    "No_class"
+  ],
+  ["No_class", "elec1", "CD_Lab", "AI", "elec2", "DBMS", "Indian_Art"],
+  [
+    "No_class",
+    "elec2",
+    "DBMS",
+    "FiberOptics",
+    "Indian_Art",
+    "CD_Lab",
+    "No_class"
+  ],
+  [
+    "No_class",
+    "elec1",
+    "Employ_Skills",
+    "No_class",
+    "DBMS",
+    "AI_LAB",
+    "CD_Lab"
+  ],
+  [
+    "No_class",
+    "elec2",
+    "Comprehension",
+    "FiberOptics",
+    "No_class",
+    "MOOC",
+    "AI_LAB"
+  ],
+  [
+    "No_class",
     "AI",
     "CD_Lab",
     "DBMS",

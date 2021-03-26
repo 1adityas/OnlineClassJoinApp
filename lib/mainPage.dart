@@ -31,7 +31,7 @@ class mymainPage extends State<mainPage> {
       // print(currTime);
 
       if (currWeek == 0 || currTime == 0) {
-        linkName = 'chill';
+        linkName = 'no_class';
         link =
             "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
       } else {
