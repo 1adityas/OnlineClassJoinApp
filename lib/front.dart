@@ -8,8 +8,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 class front extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: new Stack(fit: StackFit.expand, children: <Widget>[
+    return Material(
+        child: Container(
+            child: new Stack(fit: StackFit.expand, children: <Widget>[
       BackdropFilter(
         filter: new ui.ImageFilter.blur(
           sigmaX: 7.5,
@@ -43,7 +44,7 @@ class front extends StatelessWidget {
           body: Center(child: Text("hi"))),
       Column(
         children: [
-          SizedBox(height: 150),
+          SizedBox(height: 130),
           Container(
               color: Colors.white12,
               child: Text(
@@ -51,8 +52,9 @@ class front extends StatelessWidget {
                 style: TextStyle(color: Colors.black87, fontSize: 30),
               )),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.black12, // background
@@ -64,6 +66,7 @@ class front extends StatelessWidget {
               child: Text(
                 "Network Security b1",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.black12, // background
@@ -75,6 +78,7 @@ class front extends StatelessWidget {
               child: Text(
                 "Network Security b2",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Colors.black12, // background
@@ -89,18 +93,19 @@ class front extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
+          /////ELECTIVE 2////////////
           Container(
-              color: Colors.white12,
+              color: Colors.white30,
               child: Text(
                 "Elective-II",
                 style: TextStyle(color: Colors.black87, fontSize: 30),
               )),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.black12, // background
+                primary: Colors.white24, // background
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
@@ -109,9 +114,10 @@ class front extends StatelessWidget {
               child: Text(
                 "High Performance Computing",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.black12, // background
+                primary: Colors.white24, // background
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
@@ -120,9 +126,10 @@ class front extends StatelessWidget {
               child: Text(
                 "Network Routing Algorithms b1",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.black12, // background
+                primary: Colors.white24, // background
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
@@ -131,9 +138,10 @@ class front extends StatelessWidget {
               child: Text(
                 "Network Routing Algorithms b2",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.black12, // background
+                primary: Colors.white24, // background
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
@@ -142,6 +150,7 @@ class front extends StatelessWidget {
               child: Text(
                 "Wireless Sensor Networks",
               )),
+          SizedBox(height: 10),
           ElevatedButton(
               onPressed: () {
                 check(context);
@@ -149,7 +158,7 @@ class front extends StatelessWidget {
               child: Text("continue"))
         ],
       )
-    ]));
+    ])));
   }
 }
 
