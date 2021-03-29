@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'myglobals.dart';
 import 'front.dart';
@@ -25,29 +23,32 @@ class mymainPage extends State<mainPage> {
 
   Future refresh() async {
     // print("looks like it is working");
-    setState(() async {
-      int currTime = timeCondition();
-      int currWeek = weekCondition();
-      // print(currTime);
 
-      if (currWeek == 0 || currTime == 0) {
-        linkName = 'no_class';
-        link =
-            "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
-      } else {
-        String _linkName = table[currWeek][currTime];
-        if (_linkName == 'elec1' || _linkName == 'elec2') {
-          if (_linkName == 'elec1') {
-            linkName = await getElev1();
-            print(linkName);
-          } else
-            linkName = await getElev2();
-        } else
-          linkName = _linkName;
-        link = hashtable[linkName];
-        print(linkName);
-      }
-    });
+    int currTime = timeCondition();
+    int currWeek = weekCondition();
+    // print(currTime);
+
+    if (currWeek == 0 || currTime == 0) {
+      linkName = 'no_class';
+      link =
+          "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
+    } else {
+      String _linkName = table[currWeek][currTime];
+      // print(_linkName);
+      if (_linkName == 'elec1' || _linkName == 'elec2') {
+        if (_linkName == 'elec1') {
+          linkName = await getElev1();
+        } else {
+          linkName = await getElev2();
+          print(linkName);
+        }
+      } else
+        linkName = _linkName;
+      link = hashtable[linkName];
+      // print(linkName);
+    }
+    ;
+    // linkName = "";
   }
 
   Widget raisedButton() {
@@ -74,6 +75,7 @@ class mymainPage extends State<mainPage> {
     // print("yo man inside launch url");
     ;
     if (await canLaunch(url)) {
+      // print(url);
       await launch(url);
     } else {
       throw 'Could not launch $url';
@@ -97,7 +99,7 @@ class mymainPage extends State<mainPage> {
           toolbarHeight: 70,
           backgroundColor: Colors.black26.withOpacity(0.5),
           title: Text(
-            'Now Never miss class ;-)',
+            'Now Never miss class :)',
             style: TextStyle(
               fontFamily: "cursive",
               fontSize: 30,

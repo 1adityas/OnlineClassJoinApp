@@ -109,7 +109,7 @@ class front extends StatelessWidget {
                 onPrimary: Colors.white70, // foreground
               ),
               onPressed: () {
-                setElev2('HCP');
+                setElev2('HPC');
               },
               child: Text(
                 "High Performance Computing",
@@ -155,7 +155,8 @@ class front extends StatelessWidget {
               onPressed: () {
                 check(context);
               },
-              child: Text("continue"))
+              child: Text("continue")),
+          SizedBox(height: 10),
         ],
       )
     ])));
@@ -172,7 +173,6 @@ Future check(context) async {
         context, MaterialPageRoute(builder: (context) => mainPage()));
   }
   print("check done if");
-  ;
 }
 
 Future setElev1(s) async {
@@ -188,14 +188,14 @@ Future setElev2(s) async {
 Future getElev1() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String s = prefs.getString("elec1") ?? 'false';
-  print(s);
+  // print(s);
   return s;
 }
 
 Future getElev2() async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
   String s = prefs.getString("elec2") ?? 'false';
-  print(s);
+  // print(s);
   return s;
 }
 

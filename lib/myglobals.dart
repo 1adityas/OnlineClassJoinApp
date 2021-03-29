@@ -3,7 +3,7 @@ var jugad = [
   [1, 2, 3],
   [2, 3, 4]
 ];
-String linkName = 'No class';
+String linkName;
 // String name = "No class";
 
 Map<String, String> hashtable = {
