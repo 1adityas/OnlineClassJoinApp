@@ -34,20 +34,25 @@ class mymainPage extends State<mainPage> {
           "https://cache.lovethispic.com/uploaded_images/242927-Just-Chill-Out.jpg";
     } else {
       String _linkName = table[currWeek][currTime];
-      // print(_linkName);
       if (_linkName == 'elec1' || _linkName == 'elec2') {
         if (_linkName == 'elec1') {
-          linkName = await getElev1();
+          _linkName = await getElev1();
         } else {
-          linkName = await getElev2();
-          print(linkName);
+          _linkName = await getElev2();
         }
-      } else
-        linkName = _linkName;
+        setState(() {
+          linkName = _linkName;
+        });
+      } else {
+        print("hi");
+        setState(() {
+          linkName = _linkName;
+        });
+      }
+
       link = hashtable[linkName];
-      // print(linkName);
     }
-    ;
+
     // linkName = "";
   }
 
@@ -87,6 +92,7 @@ class mymainPage extends State<mainPage> {
   @override
   Widget build(BuildContext context) {
     refresh();
+    print(linkName);
     return new Container(
         child: new Stack(fit: StackFit.expand, children: <Widget>[
       new Image.asset(
